@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cell-Type Prototype-Informed Neural Network for Gene Expression Estimation from Pathology Images</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Sans&family=Castoro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://github.com/naivete5656/CPNN">
+      <i class="fab fa-github"></i>&nbsp;CPNN
+    </a>
+  </div>
+</nav>
+
+<!-- Hero / Title -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Cell-Type Prototype-Informed Neural Network for Gene Expression Estimation from Pathology Images
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Kazuya Nishimura,
+            </span>
+            <span class="author-block">
+              Ryoma Bise,
+            </span>
+            <span class="author-block">
+              Shinnosuke Matsuo,
+            </span>
+            <span class="author-block">
+              Haruka Hirose,
+            </span>
+            
+            <span class="author-block">
+              Yasuhiro Kojima
+            </span>
+          </div>
+
+          <!-- Links -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper (arXiv) coming soon</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/naivete5656/CPNN" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code for Bulk</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/naivete5656/TRIPLEX_x_CPNN" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code for ST</span>
+                </a>
+              </span>
+
+              <!-- Placeholder for processed data link -->
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1l6cWL_-Lu-LeuMu0_OiObeuV8WWVy6im?usp=drive_link" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Processed Data</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <img src="static/images/overview.jpg" alt="CPNN main figure" class="teaser">
+      <p class="subtitle is-6 mt-3" style="color: #666;">
+        Overview of CPNN for bulk and spatial gene expression prediction.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Estimating slide- and patch-level gene expression profiles from pathology images enables rapid and low-cost molecular analysis with broad clinical impact. Despite strong results, existing approaches treat gene expression as a mere slide- or spot-level signal and do not incorporate the fact that the measured expression arises from the aggregation of underlying cell-level expression. To explicitly introduce this missing cell-resolved guidance, we propose a Cell-type Prototype-informed Neural Network (CPNN) that leverages publicly available single-cell RNA-sequencing datasets. Since single-cell measurements are noisy and not paired with histology images, we first estimate cell-type prototypes—mean expression profiles that capture stable gene–gene co-variation patterns. CPNN then learns cell-type compositional weights directly from images and models the relationship between prototypes and observed bulk or spatial expression, providing a biologically grounded and structurally regularized prediction framework.
+We evaluate CPNN on three slide-level datasets and three patch-level spatial transcriptomics datasets. Across all settings, CPNN achieves the highest performance in terms of Spearman correlation. Moreover, by visualizing the inferred compositional weights, our framework provides interpretable insights into which cell types drive the predicted expression.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr class="section-divider">
+
+<!-- Citation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Citation</h2>
+    <div class="content">
+      <p>If you use this work, please cite our paper:</p>
+      <pre><code>@inproceedings{chung2024accurate,
+  title={Cell-Type Prototype-Informed Neural Network for Gene Expression Estimation from Pathology Images},
+  author={Kazuya Nishimura, Ryoma Bise, Shinnosuke Matsuo, Haruka Hirose, Yasuhiro Kojima},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/naivete5656/TRIPLEX_x_CPNN" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <p class="mt-3">
+        This page was built using the
+        <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfies</a> template.
+        Licensed under
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="static/js/index.js"></script>
+</body>
+</html>
