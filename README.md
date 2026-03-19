@@ -1,5 +1,15 @@
-# Cell-Type Prototype-Informed Neural Network for Gene Expression Estimation from Whole Slide Image
+# Cell-Type Prototype-Informed Neural Network for Gene Expression Estimation from Pathology Images
 [Kazuya Nishimura](https://naivete5656.github.io/index-e.html), [Ryoma Bise](https://human.ait.kyushu-u.ac.jp/~bise/index-en.html), Shinnosuke Matsuo, Haruka Hirose, [Yasuhiro Kojima](https://researchmap.jp/yskjm?lang=en)
+
+## Overview
+
+<img width="975" height="448" alt="image" src="https://github.com/user-attachments/assets/d2471854-c97c-4925-b95b-48c3e284dbc1" />
+
+This repository implements a Cell-Type Prototype-Informed Neural Network for Gene Expression Estimation from Pathology Images.
+The method leverages single-cell RNA sequencing (scRNA-seq) data to construct cell-type-specific prototypes, which are then used to guide gene expression prediction from histopathological image patches. By incorporating biologically meaningful priors, the model improves interpretability and prediction accuracy compared to purely image-based approaches.
+
+For spatial transcriptomics prediction, please refer to our related implementation:
+https://github.com/naivete5656/TRIPLEX_x_CPNN
 
 ## Environment
 
@@ -123,11 +133,7 @@ done
 
 
 
-## Overview
 
-<!-- overview.png will be added here -->
-
-ProtoSum is a cell-type prototype-informed neural network that estimates gene expression profiles from whole slide images (WSI). It leverages single-cell RNA-seq data to construct cell-type prototypes and uses them to guide gene expression prediction from histology patches.
 
 ## Training
 
