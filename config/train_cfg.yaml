@@ -1,0 +1,30 @@
+GENERAL:
+  seed: 2021
+  log_path: ./logs
+  ckpt_path: ./ckpts/exps
+  wandb: True
+  gpu: 0
+  
+TRAINING:
+  batch_size: 1
+  num_workers: 0
+  optimizer: adam
+  learning_rate: 1.0e-3
+  num_epochs: 1000
+  early_stopping:
+    monitor: valid_loss
+    patience: 30
+    mode: min
+  
+MODEL:
+  loss_type: 'MSELoss'
+
+DATASET:
+  dataset: SimpleDataset
+  testdataset: SimpleDataset
+  collate_fn: collate_fn
+  data_dir: ./dataset
+  dir_name: sample_pair4mil
+  
+
+
